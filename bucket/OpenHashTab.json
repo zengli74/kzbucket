@@ -10,7 +10,7 @@
 		"64bit": {
 			"installer": {
 				"script": [
-					"innounp -x -d\"$dir\" -c\"{sys}\" \"$dir\\setup.exe\" -y",
+					"innounp -x -d\"$dir\" -c\"$dir\" \"$dir\\setup.exe\" -y",
 					"Move-Item \"$dir\\OpenHashTab,1.dll\" \"$dir\\OpenHashTab.dll\"",
 					"sudo regsvr32 /s \"$dir\\OpenHashTab.dll\""
 				]
@@ -22,7 +22,7 @@
 		"32bit": {
 			"installer": {
 				"script": [
-					"innounp -x -d\"$dir\" -c\"{sys}\" \"$dir\\setup.exe\" -y",
+					"innounp -x -d\"$dir\" -c\"$dir\" \"$dir\\setup.exe\" -y",
 					"Move-Item \"$dir\\OpenHashTab,3.dll\" \"$dir\\OpenHashTab.dll\"",
 					"sudo regsvr32 /s \"$dir\\OpenHashTab.dll\""
 				]
